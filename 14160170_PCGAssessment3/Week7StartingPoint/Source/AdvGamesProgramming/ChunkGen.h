@@ -8,6 +8,7 @@
 #include "PlayerCharacter.h"
 #include "EnemyCharacter.h"
 #include "AIManager.h"
+#include "ChunkCounter.h"
 #include "ChunkGen.generated.h"
 
 UCLASS()
@@ -59,5 +60,7 @@ public:
 
 	int NoOfChunks;
 
+	UPROPERTY(EditAnywhere)
+	AChunkCounter* ChunkCounter;
 	
 };

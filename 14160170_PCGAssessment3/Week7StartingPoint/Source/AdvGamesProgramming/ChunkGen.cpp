@@ -96,6 +96,7 @@ void AChunkGen::CreateNewChunks() {
 				AChunk* NewChunk = GetWorld()->SpawnActor<AChunk>(AChunk::StaticClass(), NewChunkPosition, FRotator(0.0f, 0.0f, 0.0f));
 				SpawnedChunks.Add(NewChunk);
 				NoOfChunks++;
+				ChunkCounter->IncreaseChunks();
 
 			}
 
